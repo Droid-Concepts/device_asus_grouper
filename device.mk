@@ -27,8 +27,5 @@ $(call inherit-product, device/asus/grouper/device-common.mk)
 # inherit from the non-open-source side, if present
 $(call inherit-product-if-exists, vendor/asus/grouper/device-vendor.mk)
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.carrier=wifi-only
-
 DEVICE_PACKAGE_OVERLAYS := \
     device/asus/grouper/overlay

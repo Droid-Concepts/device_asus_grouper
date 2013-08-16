@@ -21,7 +21,7 @@ else
 endif
 
 PRODUCT_AAPT_CONFIG := normal large tvdpi hdpi
-PRODUCT_AAPT_PREF_CONFIG := tvdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 
 PRODUCT_PROPERTY_OVERRIDES := \
@@ -29,10 +29,6 @@ PRODUCT_PROPERTY_OVERRIDES := \
     wifi.supplicant_scan_interval=15 \
     tf.enable=y \
     drm.service.enabled=true
-
-# Set default USB interface
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp
 
 include frameworks/native/build/tablet-7in-hdpi-1024-dalvik-heap.mk
 
